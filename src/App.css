@@ -1,38 +1,49 @@
+
 .App {
-  text-align: center;
-}
+    text-align: center;
+    background-color: skyblue;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.text {
+    border: 1px solid red;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: darkgoldenrod;
+    color: white;
+   
+    
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.box {
+   padding: 5px; 
+   border-radius: 10px;
+   color: white;
 }
+.box.confirmed {
+background-color: #d4d42c;
+border: 1px solid rgb(136, 136, 49);
+color: black;
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.box.recovered {
+background-color: #05ac2f;
+border: 1px solid rgb(72, 160, 45);
+}
+.box.deaths {
+    background-color: #910b0b;
+border: 1px solid rgb(102, 20, 38);
+}
+.dropDown {
+    margin: 1em 0;
+    padding: 0.5em;
+    font-size: 1em;
+}
+.developer{
+    margin-top: 100px;
+    text-align: end;
+}
+.developer img {
+    border: 1px solid white;
+    border-radius: 50%;
 }
